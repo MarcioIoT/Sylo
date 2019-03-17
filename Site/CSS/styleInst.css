@@ -46,4 +46,212 @@
     background-repeat: no-repeat;
 }
 
+.textobanner
+{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Roboto-Black;
+    font-size: 270%;
+    color:white;
+    
+}
+.subtextobanner
+{
+    position: absolute;
+    top: 35%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: Roboto-Medium;
+    font-size: 180%;
+    text-align: center;
+    color:white;
+}
+
+.bannerbolsa
+{
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    text-align:center;
+    margin: 27% 25% 25% 25%;
+    
+}
+.banner
+{
+    
+    height:100%;
+    width:100%;
+    border: 2px hidden;
+    
+    
+}
+.f1
+{
+    margin-left: 17%;
+    height: 50%;
+    width:20%;
+    float: left;
+    text-align: center;
+    font-family: monospace;
+    font-size: 200%;
+}
+
+.f2
+{    
+    margin-left: 2%;
+    height: 50%;
+    width:20%;
+    float: left;
+    text-align: center;
+    font-family: monospace;
+    font-size: 200%; 
+}
+
+.f3
+{
+    margin-left: 2%;
+    height: 50%;
+    width:20%;
+    float: left;
+    text-align: center;
+    font-family: monospace;
+    font-size: 200%;    
+}
+
+
+.f6
+{
+    margin-left: 2%;
+    height: 100%;
+    width:20%;
+    float: left;
+    text-align: center;
+    font-family: monospace;
+    font-size: 200%;  
+}
+
+.f7
+{
+    height: 100%;
+    width:20%;
+    float: left;
+    text-align: center;
+    font-family: monospace;
+    font-size: 200%; 
+}
+
+.f8
+{
+    height: 100%;
+    width:20%;
+    float: left;
+    text-align: center;
+    font-family: monospace;
+    font-size: 200%;   
+}
+
+.rodape
+{    
+    height:170px;
+    width: 100%;
+    margin:30% 0 0 0;
+    background-color: #343C3F;
+}
+
+.telefone
+{
+    float:left;
+    height: 100%;
+    width:20%;
+    margin-left: 5%;
+    
+    text-align: center;
+    font-family: monospace;
+    font-size: 150%;
+    
+}
+
+.redessociais
+{
+    float:left;
+    height: 100%;
+    width:66%;
+    margin-left: 8%;
+    border: 1px solid black;
+    text-align: center;
+    font-family: monospace;
+    font-size: 150%;
+}
+
+.rodape_espaco
+{
+    height:70%;
+}
+
+.subh2
+{
+    color:#595959;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px; 
+}
+
+.subh3
+{
+    color:#d9d9d9;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;  
+}
+
+.subh4
+{
+    color:#d9d9d9;  
+    font-family: monospace;
+    font-size: 15px;  
+}
+
+.subh
+{
+    color:#595959;
+    text-align: center;
+    font-family: monospace;
+    font-size: 24px;
+    margin: 0 0 4% 0;
+}
   
+.fespaco
+{
+    height: 14%;
+}
+h1
+{
+    color:#293d3d;
+    text-align: center;
+    font-family: monospace;
+    font-size: 32px;
+    margin: 4% 0 4% 0;
+}
+h2
+{
+    color:#293d3d;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+h3
+{
+    color:ghostwhite;
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+}
+a
+{
+    text-decoration: none;
+    color:#d9d9d9;
+  
+}

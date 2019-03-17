@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link href="../CSS/styleInst.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cadastro</title>
+</head>
+   
+    <body style='margin:0;background-color:rgb(229, 231, 236);'>
+            <div class='menuSuperior'>
+                    <div class='logo'></div>    
+                   <ul>
+                    <li> <a href="inst_login.html">Login</a></li>
+                    <li><a href="inst_cadastro.html">Cadastrar</a></li>
+                    <li><a href="inst_simulador_financeiro.html">Simulador Financeiro</a></li>
+                    <li><a href="inst_sobre_produto.html">Sobre o Produto</a></li>
+                    <li><a href="inst_inicio.html">Início</a></li>
+                    
+                </ul>
+            </div>
+            <div style='width:40%;margin:5% auto -10% auto;font-family: monospace;font-size:1.3em;'>
+     <h1 style='text-align: center;'> Cadastro</h1> 
+     
+   
+   <form action="Script_do_Formulario.php" method="post" 
+
+ { text-align: center; }
+   >
+   
+   <!-- DADOS PESSOAIS-->
+<b>Dados Pessoais</b>
+
+<div style="border-style: solid; border-width: 1px; width: 100%" >
+
+    <table cellspacing="14">
+     <tr>
+      <td>
+       <label for="nome">Nome: </label>
+      </td>
+      <td align="left">
+       <input type="text" name="email">
+      </td>
+      <td>
+       <label for="sobrenome">Sobrenome: </label>
+      </td>
+      <td align="left">
+       <input type="text" name="sobrenome">
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <label>Nascimento: </label>
+      </td>
+      <td align="left">
+       <input type="text" name="dia" size="2" maxlength="2" value="D"> 
+      <input type="text" name="mes" size="2" maxlength="2" value="M"> 
+      <input type="text" name="ano" size="4" maxlength="4" value="A">
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <label>CPF:</label>
+      </td>
+      <td align="left">
+       <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+      </td>
+     </tr>
+    </table>
+   </fieldset>
+   </div>
+   <br />
+
+   <!-- ENDEREÇO -->
+   
+   <b>Dados de Endereço</b>
+
+   <div style="border-style: solid; border-width: 1px; width: 100%" >
+
+    <table cellspacing="14">
+   
+     <tr>
+      <td>
+       <label for="estado">Estado:</label>
+      </td>
+      <td align="left">
+       <select name="estado"> 
+       <option value="ac">Acre</option> 
+       <option value="al">Alagoas</option> 
+       <option value="am">Amazonas</option> 
+       <option value="ap">Amapá</option> 
+       <option value="ba">Bahia</option> 
+       <option value="ce">Ceará</option> 
+       <option value="df">Distrito Federal</option> 
+       <option value="es">Espírito Santo</option> 
+       <option value="go">Goiás</option> 
+       <option value="ma">Maranhão</option> 
+       <option value="mt">Mato Grosso</option> 
+       <option value="ms">Mato Grosso do Sul</option> 
+       <option value="mg">Minas Gerais</option> 
+       <option value="pa">Pará</option> 
+       <option value="pb">Paraíba</option> 
+       <option value="pr">Paraná</option> 
+       <option value="pe">Pernambuco</option> 
+       <option value="pi">Piauí</option> 
+       <option value="rj">Rio de Janeiro</option> 
+       <option value="rn">Rio Grande do Norte</option> 
+       <option value="ro">Rondônia</option> 
+       <option value="rs">Rio Grande do Sul</option> 
+       <option value="rr">Roraima</option> 
+       <option value="sc">Santa Catarina</option> 
+       <option value="se">Sergipe</option> 
+       <option value="sp">São Paulo</option> 
+       <option value="to">Tocantins</option> 
+      </select>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <label for="cidade">Cidade: </label>
+      </td>
+      <td align="left">
+       <input type="text" name="cidade">
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <label for="cep">CEP: </label>
+      </td>
+      <td align="left">
+       <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+      </td>
+     </tr>
+    </table>
+   </fieldset>
+   </div>
+   <br />
+   
+   <!-- DADOS DE LOGIN -->
+  
+   <b>Dados de login</b> 
+      
+    <div style="border-style: solid; border-width: 1px; width: 100%" >
+
+    <table cellspacing="14">
+     <tr>
+      <td>
+       <label for="email">E-mail: </label>
+      </td>
+      <td align="left">
+       <input type="text" name="email">
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <label for="login">Nome de usuário: </label>
+      </td>
+      <td align="left">
+       <input type="text" name="login">
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <label for="pass">Senha: </label>
+      </td>
+      <td align="left">
+       <input type="password" name="pass">
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <label for="passconfirm">Confirme a senha: </label>
+      </td>
+      <td align="left">
+       <input type="password" name="passconfirm">
+      </td>
+     </tr>
+    </table>
+   </fieldset>
+   </div>
+   <br />
+   <button type='button' style='font-family: monospace;font-size:1.3em;float: left;' onClick="javascript:history.go(-1)">Voltar</button>
+   <button type='button' style='font-family: monospace;font-size:1.3em;float: right;margin:0 0 0 14px;' onclick='cadastro()'>Cadastrar</button>
+   <button type='reset' style='font-family: monospace;font-size:1.3em;float:right;'>Limpar</button>
+   </form>
+</div>
+<div class="rodape">
+    <img src="../Imagens/Logo/SpotifyLogo.png" height="80px" width="270px" style="float:left;margin: 3% 0 0 4%;">
+<div class="f6">
+    <h3>Empresa</h3>
+    <div class="subh3">
+    <a href="#">Sobre a Sylo</a>
+        <p></p>
+    <a href="#">Termos de Uso</a>
+        <br><br>
+    </div>
+    
+    </div>
+    <div class="f7">
+    <h3>Fale conosco</h3>
+    <div class="subh3">
+        <a href="#">(011) 98274-4354</a>
+        <p></p>
+        <a href="#">(011) 4231-9519</a>
+        <br><br>
+        </div>
+    </div>
+    <div class="f8">
+    <h3>Redes Sociais</h3>
+    <div class="subh4"><img src="../Imagens/Inst_Inicio/LogoFaceRodape.png" width="30px" height="30px" style="margin-right: 3%;">
+        <img src="../Imagens/Inst_Inicio/LogoInstaRodape.png" width="30px" height="30px" style="margin-right: 2%;">
+        <img src="../Imagens/Inst_Inicio/LogoTwitterRodape.png" width="30px" height="30px" style="margin-right: 3%;">
+        <img src="../Imagens/Inst_Inicio/LogoSnapRodape.png" width="30px" height="30px" style="margin-right: 3%;">
+        </div>
+    </div>
+    
+</div>
+    </body>
+   </html>
+
+   <script>
+   function cadastro()
+   {
+     alert(`Seja bem vindo ${login.value}!`);
+   }
+   </script>

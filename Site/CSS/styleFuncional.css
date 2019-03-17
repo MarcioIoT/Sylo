@@ -165,3 +165,149 @@
     background-color: rgb(201, 219, 205);
     cursor: pointer;
   }
+
+  .rodape
+{    
+    height:170px;
+    width: 100%;
+    margin:30% 0 0 0;
+    background-color: #343C3F;
+}
+.f1
+{
+    margin-left: 17%;
+    height: 50%;
+    width:20%;
+    float: left;
+    text-align: center;
+    font-family: monospace;
+    font-size: 200%;
+}
+
+.f2
+{    
+    margin-left: 2%;
+    height: 50%;
+    width:20%;
+    float: left;
+    text-align: center;
+    font-family: monospace;
+    font-size: 200%; 
+}
+
+.f3
+{
+    margin-left: 2%;
+    height: 50%;
+    width:20%;
+    float: left;
+    text-align: center;
+    font-family: monospace;
+    font-size: 200%;    
+}
+
+
+.f6
+{
+    margin-left: 2%;
+    height: 100%;
+    width:20%;
+    float: left;
+    text-align: center;
+    font-family: monospace;
+    font-size: 200%;  
+}
+
+.f7
+{
+    height: 100%;
+    width:20%;
+    float: left;
+    text-align: center;
+    font-family: monospace;
+    font-size: 200%; 
+}
+
+.f8
+{
+    height: 100%;
+    width:20%;
+    float: left;
+    text-align: center;
+    font-family: monospace;
+    font-size: 200%;   
+}
+.telefone
+{
+    float:left;
+    height: 100%;
+    width:20%;
+    margin-left: 5%;
+    
+    text-align: center;
+    font-family: monospace;
+    font-size: 150%;
+    
+}
+
+.redessociais
+{
+    float:left;
+    height: 100%;
+    width:66%;
+    margin-left: 8%;
+    border: 1px solid black;
+    text-align: center;
+    font-family: monospace;
+    font-size: 150%;
+}
+
+.rodape_espaco
+{
+    height:70%;
+}
+
+.subh2
+{
+    color:#595959;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px; 
+}
+
+.subh3
+{
+    color:#d9d9d9;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;  
+}
+
+.subh4
+{
+    color:#d9d9d9;  
+    font-family: monospace;
+    font-size: 15px;  
+}
+
+.subh
+{
+    color:#595959;
+    text-align: center;
+    font-family: monospace;
+    font-size: 24px;
+    margin: 0 0 4% 0;
+}
+h3
+{
+    color:ghostwhite;
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+}
+a
+{
+    text-decoration: none;
+    color:#d9d9d9;
+  
+}
