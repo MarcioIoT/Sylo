@@ -1,0 +1,31 @@
+create table Silo
+(idSilo int primary key,
+cultura varchar(20),
+dataArmazenagem date,
+tempAr float,
+umidAr float,
+tempGraos1 float,
+tempGraos2 float,
+tempGraos3 float,
+umidGraos1 float,
+umidGraos2 float,
+umidGraos3 float
+);
+
+create table Cultura
+(idCultura int primary key,
+nomeCultura varchar(40),
+tempIdeal float,
+umidIdeal float
+);
+
+create table Produtor
+(cpfProdutor int primary key,
+nomeProdutor varchar(50),
+telefoneProdutor char(12),
+emailProdutor varchar(40),
+senhaProdutor varchar(20),
+cepProdutor char(9),
+cidadeProdutor varchar(40),
+ufProdutor char(2)
+);
