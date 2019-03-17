@@ -1,1 +1,2 @@
-Adicionei aqui os arquivo referente a documentação.
+Projeto de Pesquisa e Inovação
+Será desenvolvido um sistema para monitoramento de grãos.
