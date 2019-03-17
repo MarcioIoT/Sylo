@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="../CSS/styleInst.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Simulador Financeiro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+        
+            .container{
+                margin: 10% 30%;
+                text-align: center;
+                border: solid 1px gray;
+                padding: 40px;
+            }
+
+            .obj{
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+            label.obj{
+                margin-bottom: 10px;
+            }
+            input.obj{
+                width: 70%;
+            }
+            .obj-btn{
+                display: inline-block;
+            }
+            div.obj{
+                display: none;
+            }
+            
+        </style>
+
+    </head>
+    <body style="margin: 0;">
+            <div class='menuSuperior'>
+                    <div class='logo'></div>    
+                   <ul>
+                    <li> <a href="">Login</a></li>
+                    <li><a href="">Cadastrar</a></li>
+                    <li><a href="">Simulador Financeiro</a></li>
+                    <li><a href="">Sobre Nós</a></li>
+                    <li><a href="">Início</a></li>
+                    
+                </ul>
+            </div>
+        <div class="container">
+
+            <h2>Como você armazena seus grãos?</h2>
+
+            <button class="obj obj-btn" type="button" onclick="btn_propriedade()">Em Propriedade</button>
+            <button class="obj obj-btn" type="button" onclick="btn_corporativa()">Através de Terceiros</button>
+
+            <div class="obj" id="propriedade">
+                <form>
+                    <label class="obj" for="valor_saca_p_id">Por quanto costuma vender cada saca de grãos em R$?</label>
+                    <input class="obj" type="number" id="valor_saca_p_id">
+
+                    <label class="obj" for="qt_sacas_p_id">Quantidade de sacas que você costuma produzir por safra:</label>
+                    <input class="obj" type="number" id="qt_sacas_p_id">
+
+                    <label class="obj" for="disperdicio_porcentagem_id">Quantidade de desperdicio (em %) que você tem por safra:</label>
+                    <input class="obj" type="number" id="disperdicio_porcentagem_id">
+
+                    <label class="obj" for="preco_mao_de_obra_p_id">Quantia que você gasta por mês com mão de obra:</label>
+                    <input class="obj" type="number" id="preco_mao_de_obra_p_id">
+
+                    <input type="hidden" id="escolha" value="0">
+
+                    <button class="obj" type="button" onclick="calculadoraFinanceiraP()">Calcular</button>
+
+                    <div class="obj" id="resposta1">
+                        Atualmente você tem um lucro de <b id="tag_lucro_atual_p"></b>, 
+                        devido os <b id="gastoP"></b> gastos com mão de obra 
+                        e a perda de <b id="perda_porcentagem"></b> em cada safra. 
+                        <br>
+                        Com o nosso produto você passa a ter um retorno de <b id="tag_lucro_total_p"></b> 
+                        e reduz sua perda para <b>5%</b> de sua safra,
+                        lucrando <b id="tag_lucro_adicional_p"></b> 
+                        a mais que atualmente.
+                    </div>
+                </form>
+            </div>
+
+            <div class="obj" id="corporativa">
+                <form>
+                    <label class="obj" for="qt_sacas_c_id">Quantidade de sacas você produz por safra:</label>
+                    <input class="obj" type="number" id="qt_sacas_c_id">
+
+                    <label class="obj" for="preco_frete_id">Quantia do frete, em R$, que você paga para terceiros realizarem sua armazenagem:</label>
+                    <input class="obj" type="number" id="preco_frete_id">
+
+                    <label class="obj" for="preco_mao_de_obra_c_id">Quantia que você gasta por mês com mão de obra:</label>
+                    <input class="obj" type="number" id="preco_mao_de_obra_c_id">
+
+                    <input type="hidden" id="escolha" value="1">
+
+                    <button class="obj" type="button" onclick="calculadoraFinanceiraC()">Calcular</button>
+
+                    <div class="obj" id="resposta2">
+                        Atualmente você tem um lucro de <b id="tag_lucro_atual_c"></b>* realizando sua armazenagem através de terceiros.<br>
+                        Com o nosso produto você passa a armazenar seus grãos em sua propriedade,
+                        lucrando <b id="tag_lucro_total_c"></b>, <b id="tag_lucro_adicional_c"></b> a mais que atualmente.  <br>
+                        <i style="font-size:1em">* O preço por saca utilizado é de R$50,00 / saca.</i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+    <script>
+    
+        function calculadoraFinanceiraP(){
+            var qt_sacas                = qt_sacas_p_id.value,
+                desperdicio_porcentagem = disperdicio_porcentagem_id.value,
+                preco_mao_de_obra       = preco_mao_de_obra_p_id.value;
+                valor_saca              = valor_saca_p_id.value;
+
+            var lucro_atual         = ((qt_sacas*valor_saca)-((qt_sacas*valor_saca)*(desperdicio_porcentagem/100)))-preco_mao_de_obra;
+            var lucro_total    = ((qt_sacas*valor_saca)-((qt_sacas*valor_saca)*(5/100)))-preco_mao_de_obra;
+            var lucro_adicional = lucro_total - lucro_atual;
+
+            gastoP.innerHTML            = "R$"+preco_mao_de_obra;
+            tag_lucro_total_p.innerHTML           = "R$"+lucro_total;
+            tag_lucro_atual_p.innerHTML         = "R$"+lucro_atual;
+            perda_porcentagem.innerHTML = desperdicio_porcentagem+"%";
+            tag_lucro_adicional_p.innerHTML    = "R$"+lucro_adicional;
+
+            resposta1.style.display = 'inline';
+        }
+
+        function calculadoraFinanceiraC(){
+            var qt_sacas          = qt_sacas_c_id.value,
+                preco_frete       = preco_frete_id.value,
+                preco_mao_de_obra = preco_mao_de_obra_c_id.value;
+
+            var lucro_atual = (qt_sacas*50)-preco_frete-preco_mao_de_obra;
+            var lucro_total = (qt_sacas*50)-preco_mao_de_obra;
+            var lucro_adicional    = lucro_total-lucro_atual;
+
+            tag_lucro_atual_c.innerHTML        = "R$"+lucro_atual;
+            tag_lucro_total_c.innerHTML = "R$"+lucro_total;
+            tag_lucro_adicional_c.innerHTML    = "R$"+lucro_adicional;
+
+            resposta2.style.display = 'inline';
+        }
+
+        function btn_propriedade(){
+            corporativa.style.display = 'none';
+            propriedade.style.display = 'block';
+        }
+
+        function btn_corporativa(){
+            propriedade.style.display = 'none';
+            corporativa.style.display = 'block';
+        }
+    
+    </script>
+
+</html>

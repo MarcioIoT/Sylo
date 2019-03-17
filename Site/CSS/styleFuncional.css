@@ -1,0 +1,167 @@
+.menuSuperior
+{
+    width:100%;
+    background-color: #333;
+}
+
+.menuSuperior ul
+{
+    list-style-type: none;
+    margin: 0 5% 0 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menuSuperior li
+{
+    float:  right;
+}
+
+.menuSuperior li a 
+{
+    font-family: monospace;
+    font-size: 1.6em;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menuSuperior li a:hover
+{
+    background-color: #111;        
+}
+
+.logo
+{
+    font-family: sans-serif;
+    color: white;
+    width:20%;
+    height: 46px;
+    position: absolute;
+    left: 5%;
+    right: inherit;
+    background-image:url(../Imagens/Logo/SpotifyLogo.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.containerSuperior
+{
+    display:flex;
+    margin: 20px 0 0 0;
+    height:500px;
+    width:100%;
+}
+
+.containerGrafico
+{
+    background-image: url(../Imagens/Func_Inicio/grafico.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width:60%;
+    height: 100%;
+}
+
+.containerItens
+{
+    font-family: monospace;
+    font-size: 1.4em;
+    display: flex;
+    width: 40%;
+    height: 100%;
+}
+
+.coluna1
+{
+    margin:0 0 0 80px;
+    width:50%;
+}
+
+.coluna2
+{
+    margin:0 0 0 20px;
+    width: 50%;
+}
+
+.containerInferior
+{
+    display:flex;
+    margin: 4% 0 0 0;
+    height:300px;
+    width:100%;
+}
+
+.item
+{
+    display: flex;
+    margin:5px 40px 5px 40px;
+    border-radius:80px;
+    width: 50%;
+    overflow: hidden;
+    background-color: rgb(177, 226, 188);
+}
+
+.redDot {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(221, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .greenDot {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(0, 194, 32);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .imagem_item
+  {
+      background-image: url(../Imagens/Func_Inicio/corn.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: rgb(132, 167, 214);
+      height: 90%;
+      width:40%;
+      border-radius: 80px;
+      margin: 14px 10px;
+  }
+
+  .item:hover{
+    background-color: rgb(135, 216, 153);
+    cursor: pointer;
+  }
+
+  .info_item
+  {
+      height: 100%;
+      width:50%;
+      margin:20px 0 0 40px;
+      font-size: 1.35em;
+      font-family: monospace;
+  }
+
+  .item_add
+  {
+    display: flex;
+    margin:5px 40px 5px 40px;
+    border-radius:80px;
+    border: 1px dashed rgb(103, 172, 118);
+    width: 50%;
+    overflow: hidden;
+    background-color: rgb(216, 230, 218);
+  }
+  .item_add img{
+      height:270px;
+      width: 270px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    margin: auto;  
+  }
+  .item_add:hover{
+    background-color: rgb(201, 219, 205);
+    cursor: pointer;
+  }
