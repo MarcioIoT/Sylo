@@ -20,7 +20,7 @@ umidIdeal float
 );
 
 create table Produtor
-(cpfProdutor int primary key,
+(cpfProdutor char(11) primary key,
 nomeProdutor varchar(50),
 telefoneProdutor char(12),
 emailProdutor varchar(40),
@@ -29,3 +29,23 @@ cepProdutor char(9),
 cidadeProdutor varchar(40),
 ufProdutor char(2)
 );
+
+insert into Silo values
+(12,'Milho','2018-09-28',22,40,26,24,22,30,35,40),
+(8,'Milho','2018-07-12',24,42,21,26,28,39,35,25),
+(3,'Milho','2018-12-10',22,40,26,24,22,30,35,40);
+
+insert into Produtor values
+(46225925848,'Matheus Risovas','982744354','matheusrisovas@gmail.com','aersdt321','09570030','São Caetano do Sul','SP'),
+(31243234443,'Jorge Ricardo','946572383','jorgericardo@gmail.com','ds223sd','09340210','São José dos Campos','SP'),
+(75474384192,'João Batista','913349404','joaobatista@gmail.com','cxcsad43','00987340','Santa Rita do Sapucaí','MG');
+
+insert into Cultura values
+(1,'Milho',24,45),
+(2,'Soja',20,35);
+
+select * from Silo;
+
+select * from Produtor;
+
+select * from Cultura;
