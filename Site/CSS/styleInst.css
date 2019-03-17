@@ -23,7 +23,7 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 18px;
     text-decoration: none;
 }
 
@@ -37,13 +37,9 @@
     font-family: sans-serif;
     color: white;
     width:20%;
-    height: 46px;
+    height: 100%;
     position: absolute;
     left: 5%;
-    right: inherit;
-    background-image:url(../Imagens/Logo/SpotifyLogo.png); 
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .textobanner
@@ -154,7 +150,7 @@
 
 .rodape
 {    
-    height:170px;
+    height:180px;
     width: 100%;
     margin:30% 0 0 0;
     background-color: #343C3F;
