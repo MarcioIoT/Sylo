@@ -24,36 +24,33 @@
      <h1 style='text-align: center;'> Cadastro</h1> 
      
    
-   <form action="Script_do_Formulario.php" method="post" 
-
- { text-align: center; }
-   >
+   <form action="Script_do_Formulario.php" method="post" >
    
    <!-- DADOS PESSOAIS-->
 <b>Dados Pessoais</b>
 
 <div style="border-style: solid; border-width: 1px; width: 100%" >
 
-    <table cellspacing="14">
+    <table   >
      <tr>
-      <td>
+      <td >
        <label for="nome">Nome: </label>
       </td>
-      <td align="left">
-       <input type="text" name="email">
+      <td >
+       <input type="text" name="email" size="15">
       </td>
       <td>
        <label for="sobrenome">Sobrenome: </label>
       </td>
       <td align="left">
-       <input type="text" name="sobrenome">
+       <input type="text" name="sobrenome" size="15">
       </td>
      </tr>
      <tr>
       <td>
        <label>Nascimento: </label>
       </td>
-      <td align="left">
+      <td >
        <input type="text" name="dia" size="2" maxlength="2" value="D"> 
       <input type="text" name="mes" size="2" maxlength="2" value="M"> 
       <input type="text" name="ano" size="4" maxlength="4" value="A">
@@ -61,10 +58,10 @@
      </tr>
      <tr>
       <td>
-       <label>CPF:</label>
+       <label>CNPJ:</label>
       </td>
-      <td align="left">
-       <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+      <td>
+       <input type="text" name="cnpj" size="9" maxlength="9" > - <input type="text" name="cpf2" size="2" maxlength="2">
       </td>
      </tr>
     </table>
@@ -120,18 +117,12 @@
       <td>
        <label for="cidade">Cidade: </label>
       </td>
-      <td align="left">
-       <input type="text" name="cidade">
-      </td>
-     </tr>
-     <tr>
       <td>
-       <label for="cep">CEP: </label>
-      </td>
-      <td align="left">
-       <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+       <input type="text" name="cidade">
+       
       </td>
      </tr>
+    
     </table>
    </fieldset>
    </div>
@@ -149,7 +140,7 @@
        <label for="email">E-mail: </label>
       </td>
       <td align="left">
-       <input type="text" name="email">
+       <input type="email" name="email">
       </td>
      </tr>
      <tr>
@@ -220,6 +211,7 @@
    </html>
 
    <script>
+       
    function cadastro()
    {
      alert(`Seja bem vindo ${login.value}!`);
